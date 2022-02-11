@@ -56,10 +56,16 @@ console.log("resultVal1MenorVal2: " + resultVal1MenorVal2 );
 /*console.log("resultVal1IgualVal2: " + resultVal1IgualVal2);*/
 
 
- resultVal1MaiorOuIgualVal2 = valor1 == valor2;
- resultVal1MenorOuIgualVal2 = valor1 === valor2;
+ resultVal1MaiorOuIgualVal2 = valor1 >= valor2;
+ resultVal1MenorOuIgualVal2 = valor1 <= valor2;
 
- console.log("res1: "+resultVal1MaiorOuIgualVal2);
-console.log("res2: "+resultVal1MenorOuIgualVal2);
+ let resultConcat = ("res1: ",resultVal1MaiorOuIgualVal2);
+
+ //console.log(resultConcat)
+
+
+
+ /*console.log("res1: ",resultVal1MaiorOuIgualVal2);
+console.log("res2: ",resultVal1MenorOuIgualVal2);*/
 
 
