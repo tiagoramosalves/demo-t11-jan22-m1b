@@ -69,11 +69,18 @@ então escrever na tela 'ir para praia' se não, escrever na tela 'assistir netf
 } else {
   console.log("result3: "+msgResultado2);
 }*/
-console.log("valorCaronaOriginal: "+carona);
-console.log("valorCaronaInvertido: "+!carona)
+/*console.log(`valorCaronaOriginal: ${carona}`);
+console.log("valorCaronaInvertido: "+!carona)*
 
 /*if (tanqueComb > 80 || !carona) {
   console.log("result4: " + msgResultado);
 } else {
   console.log("result4: " + msgResultado2);
 }*/
+
+
+if((10<=1)){
+  console.log('SIM');
+}else{
+console.log('NÃO');
+}
