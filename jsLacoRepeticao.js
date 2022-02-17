@@ -9,25 +9,9 @@
 /*MSG Valdomiro (Setor Vendas): Preciso de uma lista com os números dos produtos PARES da lista que a LARISSA te enviou e outra lista com os números IMPARES da lista do EMANUEL*/
 
 const arrCodProdEmanuel = [
-  "58913",
-  "15984654",
-  "548565",
-  "198457",
-  "6815487",
-  "157848",
-  "20514899",
-  "348951537",
-  "5618976",
-  "1564358196",
-  "4491598",
-  "196845729",
-  "135205527",
-  "4619165",
-  "250120",
-  "19546827",
-  "251485",
-  "52849846",
-];
+  "58913",  "15984654",  "548565",  "198457",  "6815487",  "157848",  "20514899",  "348951537",  "5618976",
+  "1564358196",  "4491598",  "196845729",  "135205527",  "4619165",  "250120",  "19546827",  "251485",
+  "52849846"];
 
 const arrCodProdLarissa = [
   5687891, 15984654, 12365489, 3211587, 11250578, 6815487, 21055487, 21598745,
@@ -35,6 +19,7 @@ const arrCodProdLarissa = [
   2811584,
 ];
 
+console.log(arrCodProdLarissa);
 /* Algoritmo
 1 - Atribuir os números em um array;
 2 - PERCORRER esse array de numeros;
@@ -97,7 +82,7 @@ function numsImparWhile(arrDeNumeros) {
 
     i++;
   }
-  
+
   return arrResultadoImpar;
 }
 
