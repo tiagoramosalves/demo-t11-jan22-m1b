@@ -12,10 +12,11 @@ funcSomar();
 //////////////////////////////////////
 
 function lerString(meuNome) {
-  let tamanhoString = meuNome.length;
+  let tamanhoString = meuNome.length; //5
 
   for (let cont = 0; cont < tamanhoString; cont++) {
     const letraAtual = meuNome[cont];
+    console.log(letraAtual);
   }
 
   return undefined;

@@ -50,7 +50,7 @@ netflix("documentário");
 let compraIfood = ifood();
 ifood();
 //console.log(compraIfood);
-//netflix("filme");
+netflix("filme");
 /*spotify();
 
 ifood();

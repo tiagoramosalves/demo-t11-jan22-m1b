@@ -3,8 +3,9 @@ meuNome;tamanhoString;cont;cont < tamanhoString;letraAtual;cont++ (cont = cont +
 """Tiago""";5;-;-;-;-
 """Tiago""";5;0;-;-;-
 """Tiago""";5;0;true;"""T""";-
-"""Tiago""";5;1;true;"""i""";0+1
-"""Tiago""";5;2;true;"""a""";1+1
-"""Tiago""";5;3;true;"""g""";2+1
-"""Tiago""";5;4;true;"""o""";3+1
-"""Tiago""";5;5;false;-;4+1
+"""Tiago""";5;0;true;"""T""";0+1
+"""Tiago""";5;1;true;"""i""";1+1
+"""Tiago""";5;2;true;"""a""";2+1
+"""Tiago""";5;3;true;"""g""";3+1
+"""Tiago""";5;4;true;"""o""";4+1
+"""Tiago""";5;5;false;-;-

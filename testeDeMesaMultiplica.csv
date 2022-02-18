@@ -1,0 +1,8 @@
+num1;num2;resSoma = num1 +num2;" resMult = resSoma *2";resMult > 7 && resMult < 20;" resSubtr = resMult - 5";Resultado FInal
+3;-;-;-;-;-;-
+3;2;-;-;-;-;-
+3;2;3+2 = 5;-;-;-;-
+3;2;5;5 * 2 = 10;-;-;-
+3;2;5;10;true && true = true;-;-
+3;2;5;10;true;10-5 = 5;-
+3;2;5;10;true;5;5

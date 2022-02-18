@@ -87,6 +87,7 @@ console.log(resultado);
 */
 
 console.log(`total pos: ${residencial.length}`);
+
 for (let i = 0; i < residencial.length; i++) {
   console.log(`indice: ${i}`);
   console.log(`valor da pos: ${residencial[i]} `);
