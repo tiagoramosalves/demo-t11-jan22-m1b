@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(30, 4, 124);
+  color: white;
+  font: normal 20px Arial;
+}
+
+.divQuadrado {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+#div1 {
+  background-color: red;
+  color: rgb(56, 245, 9);
+}
+
+#div2 {
+  background-color: rgb(238, 234, 29);
+  color: rgb(245, 9, 194);
+}
+
+strong {
+  color: orange;
+}
