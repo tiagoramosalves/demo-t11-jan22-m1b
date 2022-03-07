@@ -12,6 +12,11 @@ let usuario = {
 //console.log(`anotação usuário: ${usuario.anotacao[1]}`);
 //console.log(`email usuário: ${usuario["email"]}`);
 //usuario.localusuario = "Novo Local";
+// hello world ops xD
+
+function add(a, b) {
+  return a + b;
+}
 
 const funcionarios = [
   {
