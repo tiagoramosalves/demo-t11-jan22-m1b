@@ -44,16 +44,38 @@ let button = document.querySelector("button.button");
 ///criando elemento
 let divTerceira = document.createElement("div");
 divTerceira.setAttribute("class", "divQuadrado");
-divTerceira.innerText = "Div Terceira";
+divTerceira.innerText = "Div Terceira criada pelo DOM";
 divTerceira.style.backgroundColor = "green";
 divTerceira.style.color = "red";
 
-
-let novoP = document.createElement("p");
-novoP.innerText = "Terceiro paragrafo";
 //document.write(divTerceira.innerText);
 //console.log(divTerceira);
-
-body.appendChild(novoP);
 body.appendChild(divTerceira);
 
+for (i = 0; i < 3; i++) {
+  let novoP;
+  novoP = document.createElement("p");
+  novoP.innerText = "Terceiro paragrafo";
+  body.appendChild(novoP);
+}
+
+/////////////////EVENTOS DOM
+
+let divInt = document.getElementById("divInt");
+
+function clicou() {
+  console.log("clicou na DIV");
+}
+
+divInt.addEventListener("mouseover", mouseMexeu);
+//divInt.addEventListener("mouseout", mouseMexeu);
+
+function mouseMexeu() {
+  console.log("mouse mexeu");
+  divInt.innerText = "mexeu o mouse";
+}
+
+divInt.addEventListener("mouseout", function () {
+  console.log("mouse SAIU!");
+  divInt.innerText = "mouse SAIU!";
+});
