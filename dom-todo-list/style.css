@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+:root {
+  --color-grey-0: #111213;
+  --color-grey-1: #212529;
+  --color-grey-2: #ADB5BD;
+  --color-grey-3: #CED4DA;
+  --color-grey-4: #F8F9FA;
+  --color-grey-5: #ffffff;
+  --color-sucess-1: #12B886;
+  --color-sucess-2: #E6FCF5;
+  --border-radius-1: 8px;
+  --border-radius-2: 4px;
+  --height-elements-form: 48px;
+  --size-actions: 28px;
+  --card-main-size: 800px;
+  --font-langer: 1.375rem;
+  --font-1: 1.125rem;
+  --font-2: 1rem;
+  --font-3: 0.875rem;
+}
+
+h3 {
+  font-size: var(--font-langer);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--font-1);
+  font-weight: 400;
+}
+
+.fa {
+  font-size: var(--font-3);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-grey-0);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  padding: 1.5rem 2rem;
+}
+
+.card-main {
+  width: var(--card-main-size);
+  max-width: 100%;
+  background-color: var(--color-grey-5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: var(--border-radius-1);
+  margin: 0 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.card-main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.card-main header {
+  border-bottom: 1px solid var(--color-grey-3);
+}
+
+.card-main form .container {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.input-control {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-main form button {
+  background-color: var(--color-grey-1);
+  height: var(--height-elements-form);
+  border-radius: var(--border-radius-2);
+  border: 0;
+  cursor: pointer;
+  width: 10%;
+  color: var(--color-grey-4);
+  font-size: var(--font-1);
+}
+
+.card-main form button:hover {
+  background-color: var(--color-grey-0);
+}
+
+.card-main form input {
+  height: var(--height-elements-form);
+  border-radius: var(--border-radius-2);
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-grey-3);
+  font-size: var(--font-1);
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-box label {
+  font-size: var(--font-2);
+}
+
+.input-box span {
+  font-size: var(--font-3);
+  color: var(--color-grey-2)
+}
+
+.card-main main .main-header {
+  background-color: var(--color-grey-4);
+}
+
+.card-main main .card-task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: var(--border-radius-2);
+}
+
+.card-main main .card-task:hover {
+  background-color: var(--color-grey-4);
+}
+
+.card-area .container {
+  overflow: auto;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.card-task-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-area::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.card-area::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-grey-3);
+  -webkit-box-shadow: var(--color-grey-3);
+}
+
+.card-main main .container:nth-child(2) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.actions button {
+  height: var(--size-actions);
+  width: var(--size-actions);
+  border-radius: var(--border-radius-2);
+  border: 0;
+  background-color: var(--color-grey-4);
+  color: var(--color-grey-3);
+  cursor: pointer;
+}
+
+.actions button:nth-child(2) {
+  background-color: var(--color-sucess-2);
+  color: var(--color-sucess-1);
+}
+
+.actions button:nth-child(2).active {
+  background-color: var(--color-sucess-1);
+  color: var(--color-grey-4);
+}
