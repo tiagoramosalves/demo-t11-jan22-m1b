@@ -179,6 +179,10 @@ body {
   padding-bottom: 0;
 }
 
+.actions{
+  display: flex;
+}
+
 .actions button {
   height: var(--size-actions);
   width: var(--size-actions);
@@ -187,7 +191,10 @@ body {
   background-color: var(--color-grey-4);
   color: var(--color-grey-3);
   cursor: pointer;
+  margin: 0 3px;
 }
+
+
 
 .actions button:nth-child(2) {
   background-color: var(--color-sucess-2);
