@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0px 217px;
+
+}
+
+h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3.31rem;
+  color: #070707;
+  margin: 0px 217px
+}
+
+input {
+  color: #CECECE;
+  background-color: #F3F4F5;
+  border-radius: 7px;
+  border: 1px solid #F3F4F5;
+  padding-left: 15px;
+  height: 58px;
+}
+
+.group-menu {
+  display: flex;
+  width: 95%;
+
+  margin: auto;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline;
+  padding: 5px 8px;
+  width: fit-content;
+  background-color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px #878B96;
+  margin-right: 37px;
+  height: 38px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.preview-article p{
+  color: #878B96;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+h3 {
+
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(249, 248, 245, 0);
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  -webkit-text-stroke: 0.2px;
+  display: table;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4285;
+  padding: 3px 6px;
+  font-weight: 400;
+  color: #A3A3A3;
+  background-color: #F6F6F6;
+  margin-right: 7px;
+
+}
+
+.categorias {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.preview-article {
+  width: 287px;
+  margin-bottom: 27px;
+}
+
+h2 a {
+  font-size: 17px;
+}
+
+#container-articles {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40rem;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.fa {
+  color: #F6F6F6;
+  background-color: #070707;
+  width: max-content;
+  height: max-content;
+  font-size: 1.3rem;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+input {
+  width: 307px;
+  height: 38px;
+}
