@@ -29,6 +29,11 @@ input {
   height: 58px;
 }
 
+ul {
+  width: 633px;
+
+}
+
 .group-menu {
   display: flex;
   width: 95%;
@@ -39,14 +44,21 @@ input {
 
 nav li {
   display: inline;
-  padding: 5px 8px;
+  padding: 7px 23px;
   width: fit-content;
   background-color: #FFF;
   text-decoration: none;
   border-radius: 5px;
   border: solid 1px #878B96;
-  margin-right: 37px;
-  height: 38px;
+  height: 32px;
+}
+
+nav ul {
+  width: 637px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 a {
@@ -54,15 +66,16 @@ a {
   color: black;
 }
 
-.preview-article p{
+.preview-article p {
   color: #878B96;
 }
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  margin: 19px 0;
 }
 
 
@@ -124,4 +137,46 @@ h2 a {
 input {
   width: 307px;
   height: 38px;
+}
+
+aside {
+  height: 500px;
+  float: right;
+  width: 350px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+#container-recent-posts,
+#container-popular-posts {
+
+  height: auto;
+  margin-bottom: 53px;
+  /*height: 300px;
+   display: flex;
+  flex-direction: row;
+  align-items: flex-start; */
+}
+
+.recent-post,
+.popular-post {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 23px;
+}
+
+#container-recent-posts img,
+#container-popular-posts img {
+  width: 70px;
+  height: 58px;
+  margin-right: 16px;
+}
+
+h5 {
+  font-size: 16px;
 }
