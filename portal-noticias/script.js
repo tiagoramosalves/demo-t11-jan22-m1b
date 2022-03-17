@@ -34,7 +34,7 @@ const banco = [
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
     parNew:
-      "Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+      "123 Transforme-se <mark> em </mark> especialista em UI Design e dê um Boost na suacarreira.",
     categoria: "Entretenimento",
     secao: "main",
   },
@@ -44,7 +44,7 @@ const banco = [
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
     parNew:
-      "Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+      "ABC Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
     categoria: "Curiosidades",
     secao: "main",
   },
@@ -171,7 +171,7 @@ function createPreviewArticle(
 </article>
 */
 
-function createRecentPosts(imgSrc,textContent) {
+function createRecentPosts(imgSrc, textContent) {
   let recentPost = document.createElement("article");
   recentPost.classList.add("recent-post");
   recentPost.innerHTML = ` <img src=${imgSrc} alt="" />
@@ -234,6 +234,48 @@ function atualizaTelaNews() {
     }
   });
 }*/
+
+let seachBar = document.getElementById("search-bar");
+let btnSeach = document.getElementById("btn-seach");
+
+btnSeach.addEventListener("click", seachContent);
+
+function seachContent(event) {
+  event.preventDefault();
+
+  //BUSCANDO O VALOR DO INPUT DE BUSCAS
+  let textToSearch = seachBar.value;
+
+  let subtitleArticle = document.querySelectorAll("p");
+  let titlePosts = document.querySelectorAll("h5");
+
+  // ATRIBUINDO NA VARIAVEL pattern A ESTRUTURA REGEX (EXPRESSÃO REGULAR) PARA IGNORAR MAIUSCULOS E MINUSCULOS A PESQUISA
+  let pattern = new RegExp(`${textToSearch}`, "gi");
+
+  //console.log(subtitleArticle);
+  for (let i = 0; i < subtitleArticle.length; i++) {
+    //console.log(subtitleArticle[i].innerHTML);
+    // ALTERANDO O TEXTO ENCONTRADO COM AS TAGS <mark></mark> QUE DEIXAM O TEXTO GRIFADO
+    subtitleArticle[i].innerHTML = subtitleArticle[i].textContent.replace(
+      pattern,
+      (match) => `<mark>${match}</mark>`
+    );
+    // EXEMPLO: ALTERANDO O TEXTO ENCONTRADO COM AS TAGS <mark></mark> QUE DEIXAM O TEXTO GRIFADO
+    /*subtitleArticle[i].innerHTML = subtitleArticle[i].textContent.replace(
+      textToSearch,
+      function (match) {
+        return `<mark>${match}</mark>`;
+      }
+    );*/
+  }
+  for (let i = 0; i < titlePosts.length; i++) {
+    titlePosts[i].innerHTML = titlePosts[i].textContent.replace(
+      pattern, (match) => `<mark>${match}</mark>`
+    );
+  }
+
+  //console.log(seachBar.value);
+}
 
 /*UNÇÃO atualizaTelaNews COM SWITCH CASE CONSIDERANDO A SEÇÃO DO CONTEÚDO */
 function atualizaTelaNews() {
