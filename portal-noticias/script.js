@@ -273,6 +273,14 @@ function seachContent(event) {
       pattern, (match) => `<mark>${match}</mark>`
     );
   }
+  
+  // EXEMPLO DE TENTATIVA PARA GRIFAR A FRASE DA PALAVRA PESQUISADA
+  /*for (let i = 0; i < titlePosts.length; i++) {
+    console.log(titlePosts[i].innerText);
+    titlePosts[i].innerHTML = titlePosts[i].textContent.replace(
+      pattern, `<mark>${titlePosts[i].innerText}</mark>`
+    );
+  }*/
 
   //console.log(seachBar.value);
 }
