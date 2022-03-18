@@ -1,4 +1,4 @@
-/* ESTRUTURA HTML USADA COMO REFERECIA PARA O DOM
+/*  REFERENCIA DE ESTRUTURA HTML USADA PARA CRIAR CADA ARTIGO
 
 <article class="preview-article">
   <img
@@ -17,6 +17,7 @@
 </article>
 */
 
+/*ARRAY DE OBJETOS CRIADOS PARA SIMULAR UMA API (interface de programação de aplicativos) COMO FONTE DE DADOS DOS ARTIGOS E POSTS*/
 const banco = [
   {
     srcImg: "img/unsplash_6JVlSdgMacE.png",
@@ -24,7 +25,7 @@ const banco = [
     titleIMg: "Como utilizar o CSS da melhor forma em 2022",
     titleNew: "Como utilizar o CSS da melhor forma em 2022",
     parNew:
-      "Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+      "Dicas | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
     categoria: "Dicas",
     secao: "main",
   },
@@ -34,8 +35,8 @@ const banco = [
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
     parNew:
-      "123 Transforme-se <mark> em </mark> especialista em UI Design e dê um Boost na suacarreira.",
-    categoria: "Entretenimento",
+      "Novidades | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+    categoria: "Novidades",
     secao: "main",
   },
   {
@@ -44,7 +45,7 @@ const banco = [
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
     parNew:
-      "ABC Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+      "Curiosidades | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
     categoria: "Curiosidades",
     secao: "main",
   },
@@ -54,8 +55,38 @@ const banco = [
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
     parNew:
-      "Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+      "Novidades | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
     categoria: "Novidades",
+    secao: "main",
+  },
+  {
+    srcImg: "img/unsplash_webyw4NsFPg.png",
+    altImg: "Editores de Código -  Como escolher um bom editor",
+    titleIMg: "Editores de Código -  Como escolher um bom editor",
+    titleNew: "Como utilizar o CSS da melhor forma em 2021",
+    parNew:
+      " Dicas | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+    categoria: "Dicas",
+    secao: "main",
+  },
+  {
+    srcImg: "img/unsplash_webyw4NsFPg.png",
+    altImg: "Editores de Código -  Como escolher um bom editor",
+    titleIMg: "Editores de Código -  Como escolher um bom editor",
+    titleNew: "Como utilizar o CSS da melhor forma em 2021",
+    parNew:
+      "News | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+    categoria: "News",
+    secao: "main",
+  },
+  {
+    srcImg: "img/unsplash_J5yoGZLdpSI.png",
+    altImg: "Editores de Código -  Como escolher um bom editor",
+    titleIMg: "Editores de Código -  Como escolher um bom editor",
+    titleNew: "Como utilizar o CSS da melhor forma em 2021",
+    parNew:
+      "Curiosidades | Transforme-se em especialista em UI Design e dê um Boost na suacarreira.",
+    categoria: "Curiosidades",
     secao: "main",
   },
   {
@@ -63,7 +94,7 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "Como manter a conssistência nos estudos",
+    parNew: "Novidades R | Como manter a conssistência nos estudos",
     categoria: "Novidades",
     secao: "recents",
   },
@@ -72,8 +103,18 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "Home Office - será esse o futuro de todas empresas?",
-    categoria: "Novidades",
+    parNew:
+      "Curiosidades R | Home Office - será esse o futuro de todas empresas?",
+    categoria: "Curiosidades",
+    secao: "recents",
+  },
+  {
+    srcImg: "img/unsplash_vw3Ahg4x1tY.png",
+    altImg: "Editores de Código -  Como escolher um bom editor",
+    titleIMg: "Editores de Código -  Como escolher um bom editor",
+    titleNew: "Como utilizar o CSS da melhor forma em 2021",
+    parNew: "News R | Como manter a conssistência nos estudos",
+    categoria: "News",
     secao: "recents",
   },
   {
@@ -81,8 +122,8 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "Como manter o ambiente de estudos organizado e agra...",
-    categoria: "Novidades",
+    parNew: "Dicas R |Como manter o ambiente de estudos organizado e agra...",
+    categoria: "Dicas",
     secao: "recents",
   },
   {
@@ -90,7 +131,8 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "Bancos de imagens gratuítos para utilizar em seus projet...",
+    parNew:
+      "Novidades P | Bancos de imagens gratuítos para utilizar em seus projet...",
     categoria: "Novidades",
     secao: "popular",
   },
@@ -99,8 +141,8 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "O que considerar na hora de comprar um pc novo",
-    categoria: "Novidades",
+    parNew: "Curiosidades P | O que considerar na hora de comprar um pc novo",
+    categoria: "Curiosidades",
     secao: "popular",
   },
   {
@@ -108,8 +150,18 @@ const banco = [
     altImg: "Editores de Código -  Como escolher um bom editor",
     titleIMg: "Editores de Código -  Como escolher um bom editor",
     titleNew: "Como utilizar o CSS da melhor forma em 2021",
-    parNew: "Qual a diferença entre UI Design e Front end.",
-    categoria: "Novidades",
+    parNew: "News P | Qual a diferença entre UI Design e Front end.",
+    categoria: "News",
+    secao: "popular",
+  },
+  {
+    srcImg: "img/unsplash_oVWc3lehRz8.png",
+    altImg: "Editores de Código -  Como escolher um bom editor",
+    titleIMg: "Editores de Código -  Como escolher um bom editor",
+    titleNew: "Como utilizar o CSS da melhor forma em 2021",
+    parNew:
+      "Dicas P | Bancos de imagens gratuítos para utilizar em seus projet...",
+    categoria: "Dicas",
     secao: "popular",
   },
 ];
@@ -122,6 +174,56 @@ let containerRecentPosts = document.getElementById("container-recent-posts");
 
 //SELECIONANDO A ESTRUTURA HTML DA SECTION COM A CLASSE container-popular-posts
 let containerPopularPosts = document.getElementById("container-popular-posts");
+
+//SELECIONANDO A ESTRUTURA HTML DO ELEMENTO INPUT COM ID search-bar
+let searchBar = document.getElementById("search-bar");
+//SELECIONANDO A ESTRUTURA HTML DO ELEMENTO BUTTON COM ID btn-seach
+let btnSeach = document.getElementById("btn-seach");
+
+let conainerCategorias = document.getElementById("container-categorias");
+//console.log(conainerCategorias);
+
+conainerCategorias.addEventListener("click", filterContent);
+
+///FUNÇÃO QUE FILTRA OS CONTEÚDOS POR CATEGORIA
+function filterContent(event) {
+  let btnNav = document.querySelectorAll("li");
+  //console.log(btnNav);
+  let itemClicked = event.target;
+  //console.log(itemClicked);
+
+  /*REMOVENDO DE TODOS BOTÕES CLASSE current-category (QUE ALTERA AS CORES DO BOTÃO) */
+  //itemClicked.classList.remove('current-category');
+  if (itemClicked.id != "container-categorias") {
+    btnNav.forEach((itemLi) => {
+      itemLi.classList.remove("current-category");
+    });
+    /*ADICIONANDO NO BOTÃO CLICADO A CLASSE current-category QUE ALTERA AS CORES DO BOTÃO CLICADO*/
+    itemClicked.classList.add("current-category");
+
+    //console.log(itemClicked.innerText);
+    let categoriaConteudoClicado = itemClicked.innerText;
+
+    const arrObjfiltedCategory = banco.filter(function (character) {
+      return character.categoria.includes(categoriaConteudoClicado);
+    });
+
+    localStorage.setItem("itemClickedUser", categoriaConteudoClicado);
+
+    containerArticles.innerHTML = "";
+    containerRecentPosts.innerHTML = "";
+    containerPopularPosts.innerHTML = "";
+
+
+
+    if (categoriaConteudoClicado == "Todos") {
+      atualizaTelaNews();
+    } else {
+      //console.log(arrObjfiltedCategory);
+      atualizaTelaNews(arrObjfiltedCategory);
+    }
+  }
+}
 
 // FUNÇÃO QUE CRIA A ESTRUTURA HTML PARA CADA ARTIGO
 function createPreviewArticle(
@@ -161,16 +263,17 @@ function createPreviewArticle(
   containerArticles.appendChild(previewArticle);
 }
 
-// CHAMANDO A FUNÇÃO QUE CRIA O ARTIGO NA PÁGINA
+// TESTE: CHAMANDO A FUNÇÃO createPreviewArticle RESPONSÁVEL POR CRIAR O ARTIGO NA PÁGINA
 //createPreviewArticle();
 
-/* ESTRUTURA HTML DOS POSTS
+/* REFERENCIA DE ESTRUTURA HTML DOS POSTS
  <article class="recent-post">
     <img src="img/unsplash_vw3Ahg4x1tY.png" alt="" />
     <h5>Como manter a conssistência nos estudos</h5>
 </article>
 */
 
+//FUNÇÃO RESPONSÁVEL POR CRIAR A ESTRUTURA HTML DOS POSTS RECENTES
 function createRecentPosts(imgSrc, textContent) {
   let recentPost = document.createElement("article");
   recentPost.classList.add("recent-post");
@@ -180,6 +283,7 @@ function createRecentPosts(imgSrc, textContent) {
   containerRecentPosts.appendChild(recentPost);
 }
 
+// TESTE: CHAMANDO A FUNÇÃO createRecentPosts RESPONSÁVEL POR CRIAR O ARTIGO NA PÁGINA
 //createRecentPosts();
 
 /*
@@ -188,7 +292,7 @@ function createRecentPosts(imgSrc, textContent) {
   <h5>Bancos de imagens gratuítos para utilizar em seus projet... </h5>
 </article>
 */
-
+//FUNÇÃO RESPONSÁVEL POR CRIAR A ESTRUTURA HTML DOS POSTS POPULARES
 function createPopularPosts(imgSrc, textContent) {
   let popularPost = document.createElement("article");
   popularPost.classList.add("popular-post");
@@ -198,9 +302,11 @@ function createPopularPosts(imgSrc, textContent) {
   containerPopularPosts.appendChild(popularPost);
 }
 
+// TESTE: CHAMANDO A FUNÇÃO createPopularPosts RESPONSÁVEL POR CRIAR O POST POPULAR NA PÁGINA
 //createPopularPosts();
 
 //FUNÇÃO QUE ATUALIZA A TELA COM NOTICIAS CARREGADAS DO BANCO DE NOTICIAS
+
 /* EXEMPLO DE FUNÇÃO (ARROW FUNCTION) atualizaTelaNews ANTES DE TRATAR A SEÇÃO DO CONTEUDO NA PÁGINA
 function atualizaTelaNews() {
   banco.forEach((item) =>
@@ -235,31 +341,36 @@ function atualizaTelaNews() {
   });
 }*/
 
-let seachBar = document.getElementById("search-bar");
-let btnSeach = document.getElementById("btn-seach");
-
+/*ADICIONANDO A ESCUTA (MONITORAMENTO) NA ESTRUTURA HTML DA VARIÁVEL btnSeach QUANDO HOUVER O CLICK DISPARA A FUNÇÃO seachContent*/
 btnSeach.addEventListener("click", seachContent);
 
 function seachContent(event) {
   event.preventDefault();
 
-  //BUSCANDO O VALOR DO INPUT DE BUSCAS
-  let textToSearch = seachBar.value;
+  //GUARDANDO NA VARIÁVEL textToSearch O VALOR DIGITADO NO CAMPO INPUT ATRAVES DO searchBar.value
+  let textToSearch = searchBar.value;
 
+  // GUARDANDO NA VARIAVEL subtitleArticle A ESTRUTURA HTML COM TODOS OS ELEMENTOS <p> DA PÁGINA
   let subtitleArticle = document.querySelectorAll("p");
+
+  // GUARDANDO NA VARIAVEL titlePosts A ESTRUTURA HTML COM TODOS OS ELEMENTOS <h5> DA PÁGINA
   let titlePosts = document.querySelectorAll("h5");
 
-  // ATRIBUINDO NA VARIAVEL pattern A ESTRUTURA REGEX (EXPRESSÃO REGULAR) PARA IGNORAR MAIUSCULOS E MINUSCULOS A PESQUISA
+  // ATRIBUINDO A VARIAVEL pattern A ESTRUTURA REGEX (EXPRESSÃO REGULAR) COM A REGRA PARA NÃO CONSIDERAR NA BUSCA DAS PALAVRAS SE O USUARIO DIGITOU MAIUSCULA OU MINUSCULO (gi === Global InCaseSentitive)
   let pattern = new RegExp(`${textToSearch}`, "gi");
 
+  //TESTANDO A ESTRUTURA HTML GUARDADA NA VARIAVEL subtitleArticle QUE DEVE CONTER UMA COLEÇÃO DE ELEMENTOS <p>
   //console.log(subtitleArticle);
   for (let i = 0; i < subtitleArticle.length; i++) {
+    //TESTANDO A ESTRUTURA HTML DE CADA POSIÇÃO DA COLEÇÃO
     //console.log(subtitleArticle[i].innerHTML);
-    // ALTERANDO O TEXTO ENCONTRADO COM AS TAGS <mark></mark> QUE DEIXAM O TEXTO GRIFADO
+
+    // SUBSTITUINDO O TEXTO ENCONTRADO COM AS TAGS <mark></mark> QUE DEIXAM O TEXTO GRIFADO
     subtitleArticle[i].innerHTML = subtitleArticle[i].textContent.replace(
       pattern,
       (match) => `<mark>${match}</mark>`
     );
+
     // EXEMPLO: ALTERANDO O TEXTO ENCONTRADO COM AS TAGS <mark></mark> QUE DEIXAM O TEXTO GRIFADO
     /*subtitleArticle[i].innerHTML = subtitleArticle[i].textContent.replace(
       textToSearch,
@@ -268,12 +379,14 @@ function seachContent(event) {
       }
     );*/
   }
+  // ESTRUTURA DE REPETIÇÃO QUE SUBSTITUI A PALAVRA DIGITADA PELO USUÁRIO NA SEARCH BAR POR <mark>palavra</mark> E TEM COMO RESULTADO A PALAVRA GRIFADA
   for (let i = 0; i < titlePosts.length; i++) {
     titlePosts[i].innerHTML = titlePosts[i].textContent.replace(
-      pattern, (match) => `<mark>${match}</mark>`
+      pattern,
+      (match) => `<mark>${match}</mark>`
     );
   }
-  
+
   // EXEMPLO DE TENTATIVA PARA GRIFAR A FRASE DA PALAVRA PESQUISADA
   /*for (let i = 0; i < titlePosts.length; i++) {
     console.log(titlePosts[i].innerText);
@@ -282,12 +395,12 @@ function seachContent(event) {
     );
   }*/
 
-  //console.log(seachBar.value);
+  //console.log(searchBar.value);
 }
 
-/*UNÇÃO atualizaTelaNews COM SWITCH CASE CONSIDERANDO A SEÇÃO DO CONTEÚDO */
-function atualizaTelaNews() {
-  banco.forEach(function (item) {
+/*FUNÇÃO atualizaTelaNews COM SWITCH CASE CONSIDERANDO A SEÇÃO DO CONTEÚDO */
+function atualizaTelaNews(font = banco) {
+  font.forEach(function (item) {
     switch (item.secao) {
       case "main":
         createPreviewArticle(
@@ -309,4 +422,5 @@ function atualizaTelaNews() {
   });
 }
 
+// CHAMANDO A FUNÇÃO PRINCIPAL RESPONSÁVEL POR ATUALIZAR TODA A PÁGINA SEPARANDO OS CONTEÚDOS POR SEÇÃO
 atualizaTelaNews();

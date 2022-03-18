@@ -17,17 +17,21 @@
     </header>
     <main>
       <nav>
-        <ul>
-          <li><a href="">Todos</a></li>
-          <li><a href="">Curiosidades</a></li>
-          <li><a href="">Novidades</a></li>
-          <li><a href="">Dicas</a></li>
-          <li><a href="">News</a></li>
+        <ul id="container-categorias">
+          <li class="current-category">Todos</li>
+          <li>Curiosidades</li>
+          <li>Novidades</li>
+          <li>Dicas</li>
+          <li>News</li>
         </ul>
         <div></div>
         <form class="search-area">
           <input type="text" id="search-bar" placeholder="Pesquisar por" />
-          <button type="submit" id="btn-seach" class="fa fa-magnifying-glass"></button>
+          <button
+            type="submit"
+            id="btn-seach"
+            class="fa fa-magnifying-glass"
+          ></button>
         </form>
       </nav>
       <section id="container-articles">
@@ -65,7 +69,7 @@
         </section>
         <h4>Popular Posts</h4>
         <section id="container-popular-posts">
-         <!-- <article class="popular-post">
+          <!-- <article class="popular-post">
             <img src="img/unsplash_oVWc3lehRz8.png" alt="" />
             <h5>Bancos de imagens gratuítos para utilizar em seus projet... </h5>
           </article>
